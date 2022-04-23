@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Nome</title>
+</head>
+<body>
+
+    <h2>Alterar Nome</h2>
+    <form action = "{{ url_for('alterar_nome_recebe_valores') }}" method = "POST">
+        <label for="">CPF: </label>
+        <input type="text" placeholder="digite 11 numeros" name="id_cpf" id="id_cpf"><br><br>
+        <label for="">Nome Atual: </label>
+        <input type="text" name="id_nome_atual" id="id_nome_atual"><br><br>
+        <input type="submit" name="retorno" value="Alterar">
+    </form><br>
+
+    <button><a href="http://localhost:5000/">Voltar</a></button>
+
+</body>
+</html>
