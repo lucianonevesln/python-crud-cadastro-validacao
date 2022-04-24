@@ -1,9 +1,5 @@
 from flask import Flask, request, render_template
-from cadastrar import *
-from consultar import *
-from alterar import *
-from deletar import *
-
+from database import *
 
 app = Flask(__name__)
 
