@@ -10,3 +10,5 @@ create table cadastros (
     primary key (id)
 
 );
+
+select * from projetos.cadastros;
